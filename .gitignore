@@ -1,0 +1,91 @@
+# .gitignore
+
+# Ignorar logs e outros arquivos temporários
+*.log
+*.tmp
+*.temp
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar dependências do Node.js no client
+client/node_modules/
+client/build/
+client/.env
+
+# Ignorar arquivos gerados pelo npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar dependências e arquivos gerados pelo Python/Django no service
+service/__pycache__/
+service/db.sqlite3
+service/media/
+service/staticfiles/
+service/env/
+service/.venv/
+service/.env
+service/*.pyc
+
+# Ignorar arquivos de ambiente virtual do Python
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignorar configurações específicas do VS Code (se aplicável)
+.vscode/
+
+# Ignorar IDEs específicas
+.idea/
+*.iml
+
+# Ignorar arquivos de configuração de editores
+*.sublime-workspace
+*.sublime-project
+
+# Ignorar arquivos de logs
+logs/
+*.log
+*.out
+*.log*
+
+# Ignorar configurações do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de testes
+coverage/
+nosetests.xml
+*.cover
+.hypothesis/
+
+# Ignorar diretórios e arquivos específicos do projeto
+client/dist/
+client/.next/
+client/out/
+client/.cache/
+client/.parcel-cache/
+client/.nuxt/
+client/.cache-loader/
+client/.nuxt/
+client/.vercel/
+
+service/static/
+service/tmp/
+service/.eggs/
+service/.tox/
+service/.coverage
+service/*.egg-info/
+service/.mypy_cache/
+service/.pytest_cache/
+service/.cache/
