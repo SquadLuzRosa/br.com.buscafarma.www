@@ -50,18 +50,6 @@ Contamos com uma equipe dedicada para manutenção e suporte, assegurando a qual
 
 Agradecemos por se juntar a nós nesta jornada para transformar a maneira como as pessoas encontram e comparam medicamentos. Juntos, podemos tornar o acesso à saúde mais fácil e acessível para todos.
 
-
-### FLUXO `git flow`
-
-```mermaid
-graph TD;
-    A[Main] --> B[Developer]
-    B --> C[Client]
-    B --> D[Service]
-    B --> E[UX]
-    B --> F[Testes]
-    B --> G[PO]
-
 ```
 ### Modelo
 
