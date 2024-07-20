@@ -63,3 +63,26 @@ graph TD;
     B --> G[PO]
 
 ```
+### Modelo
+
+```mermaid
+erDiagram
+    USERS {
+        INT id PK "Primary Key"
+        STRING username "Username"
+        STRING password_hash "Password Hash"
+        STRING email "Email"
+        DATE created_at "Creation Date"
+        DATE updated_at "Last Updated"
+    }
+
+    %% Relationships can be added here if there are other entities related to Users
+    %% For example:
+    %% USER_ROLES {
+    %%     INT id PK "Primary Key"
+    %%     INT user_id FK "Foreign Key"
+    %%     STRING role "Role"
+    %% }
+    %% USERS ||--o{ USER_ROLES : has
+
+```
