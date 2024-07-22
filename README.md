@@ -50,7 +50,7 @@ Contamos com uma equipe dedicada para manutenção e suporte, assegurando a qual
 
 Agradecemos por se juntar a nós nesta jornada para transformar a maneira como as pessoas encontram e comparam medicamentos. Juntos, podemos tornar o acesso à saúde mais fácil e acessível para todos.
 
-```
+
 ### Modelo
 
 ```mermaid
