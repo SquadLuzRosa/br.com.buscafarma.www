@@ -1,0 +1,34 @@
+# Arquivos de configuração
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Arquivos de ambiente
+.env
+db.sqlite3
+
+# Arquivos de log
+logs/
+*.log
+
+# Diretório de mídia
+media/
+
+# Arquivos de cache
+__pycache__/
+
+# Arquivos de dependência
+venv/
+env/
+
+# Arquivos de compilação
+*.pyc
+
+# Arquivos de IDE/Editor
+.idea/
+.vscode/
+
+# Arquivos de deploy
+*.pyc
+.DS_Store
