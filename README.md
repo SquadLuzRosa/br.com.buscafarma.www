@@ -56,44 +56,21 @@ Agradecemos por se juntar a nós nesta jornada para transformar a maneira como a
   <table>
     <tr>
       <td align="center">
-        <svg width="100" height="100">
-          <defs>
-            <clipPath id="circleView">
-              <circle cx="50" cy="50" r="50" fill="#FFFFFF" />
-            </clipPath>
-          </defs>
-          <image href="https://avatars.githubusercontent.com/u/50967217?v=4" width="100" height="100" clip-path="url(#circleView)" />
-        </svg>
-        <br>
-        <b><a href="https://github.com/neresfabio">Fábio Neres</a></b><br>
-        <i>FUllStack</i>
+        <img src="https://avatars.githubusercontent.com/u/50967217?v=4" width="100" ><br>
+        <a href="https://github.com/neresfabio" ><b>Fábio Neres</b></a><br>
+        <i>FullStack</i>
       </td>
       <td align="center">
-      <svg width="100" height="100">
-          <defs>
-            <clipPath id="circleView">
-              <circle cx="50" cy="50" r="50" fill="#FFFFFF" />
-            </clipPath>
-          </defs>
-          <image href="https://avatars.githubusercontent.com/u/108550945?v=4", width="100" height="100" clip-path="url(#circleView)" />
-        </svg>
-        <br>
-        <b><a href="https://github.com/thiagoferreirapy">Thiago Ferreira</a></b><br>
+        <img src="https://avatars.githubusercontent.com/u/108550945?v=4" width="100" ><br>
+        <a href="https://github.com/thiagoferreirapy" ><b>Thiago Ferreira</b></a><br>
         <i>BackEnd</i>
-      </tb>
-       <td align="center">
-      <svg width="100" height="100">
-          <defs>
-            <clipPath id="circleView">
-              <circle cx="50" cy="50" r="50" fill="#FFFFFF" />
-            </clipPath>
-          </defs>
-          <image href="https://avatars.githubusercontent.com/u/91827021?v=4" width="100" height="100" clip-path="url(#circleView)" />
-        </svg>
-        <br>
-        <b><a href="https://github.com/viotto-lucas">Viotto Lucas</a></b><br>
+      </td>
+      <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/91827021?v=4" width="100" ><br>
+        <a href="https://github.com/viotto-lucas" ><b>Lucas Viotto</b></a><br>
         <i>FrontEnd</i>
-      </tb>
+      </td>
     </tr>
   </table>
 </div>
+
