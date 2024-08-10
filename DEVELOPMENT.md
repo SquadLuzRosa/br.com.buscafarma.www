@@ -311,6 +311,23 @@ CREATE TABLE Medicine (
 
 Esta documentação cobre o modelo de dados e as funcionalidades principais para o sistema de inclusão e consulta de preços de medicamentos. Inclui agora a estrutura necessária para a gestão de tokens de autenticação. Se precisar de ajustes ou mais detalhes, estou aqui para ajudar!
 
+## Autores
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/50967217?v=4" width="100" style="border-radius: 50%;"><br>
+        <b>Octocat</b><br>
+        <i>Desenvolvedor</i>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+
 
 
 
