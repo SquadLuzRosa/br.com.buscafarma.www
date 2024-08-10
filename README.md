@@ -49,6 +49,7 @@ Adotaremos medidas rigorosas de segurança da informação para garantir a confo
 Contamos com uma equipe dedicada para manutenção e suporte, assegurando a qualidade contínua do serviço e a satisfação dos nossos usuários.
 
 Agradecemos por se juntar a nós nesta jornada para transformar a maneira como as pessoas encontram e comparam medicamentos. Juntos, podemos tornar o acesso à saúde mais fácil e acessível para todos.
+<<<<<<< HEAD
 
 ## Equipe
 
@@ -74,3 +75,5 @@ Agradecemos por se juntar a nós nesta jornada para transformar a maneira como a
   </table>
 </div>
 
+=======
+>>>>>>> 1e22070347e92529061ae8b72b4f906a7ccb26bb
