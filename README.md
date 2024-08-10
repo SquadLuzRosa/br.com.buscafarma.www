@@ -74,6 +74,3 @@ Agradecemos por se juntar a nós nesta jornada para transformar a maneira como a
     </tr>
   </table>
 </div>
-
-=======
->>>>>>> 1e22070347e92529061ae8b72b4f906a7ccb26bb
