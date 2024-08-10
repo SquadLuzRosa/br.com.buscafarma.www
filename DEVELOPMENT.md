@@ -311,9 +311,51 @@ CREATE TABLE Medicine (
 
 Esta documentação cobre o modelo de dados e as funcionalidades principais para o sistema de inclusão e consulta de preços de medicamentos. Inclui agora a estrutura necessária para a gestão de tokens de autenticação. Se precisar de ajustes ou mais detalhes, estou aqui para ajudar! ...
 
+</details>
 
+<details>
+    <summary>Atualizando Branch</summary>
+    Para puxar as atualizações da branch pai para a sua branch atual, você pode usar um dos seguintes comandos, dependendo da estratégia de integração que você deseja adotar:
 
+### 1. **Merge (Padrão)**
+Essa opção criará um merge commit, combinando as mudanças da branch pai com a sua branch atual.
+```bash
+git merge nome-da-branch-pai
+```
 
+### 2. **Rebase**
+Essa opção aplicará as mudanças da branch pai no topo da sua branch atual, mantendo um histórico linear.
+```bash
+git rebase nome-da-branch-pai
+```
 
+### 3. **Fast-forward**
+Se você sabe que as mudanças na sua branch atual podem ser aplicadas diretamente após as mudanças da branch pai (sem a necessidade de um merge commit), use:
+```bash
+git merge --ff-only nome-da-branch-pai
+```
 
+### Passo a Passo
+1. **Certifique-se de estar na sua branch atual:**
+   ```bash
+   git checkout sua-branch
+   ```
+
+2. **Puxe as últimas atualizações da branch pai para garantir que você está sincronizado com o repositório remoto:**
+   ```bash
+   git fetch origin nome-da-branch-pai
+   ```
+
+3. **Realize a integração usando uma das estratégias acima:**
+   - Com `git merge`, `git rebase` ou `git merge --ff-only`, conforme explicado.
+
+### Exemplo
+Se sua branch atual é `feature` e a branch pai é `develop`, você faria o seguinte:
+```bash
+git checkout feature
+git fetch origin develop
+git merge develop   # ou git rebase develop
+```
+
+Isso integrará as últimas mudanças da branch `develop` na sua branch `feature`.
 </details>

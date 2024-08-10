@@ -50,6 +50,30 @@ Contamos com uma equipe dedicada para manutenção e suporte, assegurando a qual
 
 Agradecemos por se juntar a nós nesta jornada para transformar a maneira como as pessoas encontram e comparam medicamentos. Juntos, podemos tornar o acesso à saúde mais fácil e acessível para todos.
 
+## Tecnologias Utilizadas
+
+Durante o desenvolvimento deste projeto, foram empregadas as seguintes tecnologias:
+
+- **Linguagem de Programação:** 
+  - [Pyton](https://www.python.org/)
+  - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- **Frameworks e Bibliotecas:**
+  - [Vite](https://vitejs.dev/)
+  - [Django](https://www.djangoproject.com/)
+  - [Link]()
+  - [Link]()
+- **Banco de Dados:** [PostgreSQL](https://www.postgresql.org/)
+- **Controle de Versão:** [Git](https://git-scm.com/)
+  - Repositório hospedado no [GitHub](https://github.com/)
+- **Ferramentas de Gestão e Colaboração:**
+  - [Jira](https://www.atlassian.com/software/jira)
+  - [Confluence](https://www.atlassian.com/software/confluence)
+- **Plataforma de Deploy:**
+  - [Docker](https://www.docker.com/)
+
+Essa combinação de tecnologias foi escolhida para garantir eficiência, escalabilidade e facilidade de manutenção do projeto.
+
+
 ## Equipe
 
 <div align="center">
