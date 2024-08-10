@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Bem-vindo ao projeto BuscaFarma! Este repositório contém o código-fonte e a documentação para o desenvolvimento do nosso aplicativo inovador. O BuscaFarma tem como objetivo principal facilitar a comparação de preços e a localização de farmácias, resolvendo a principal dor do cliente: ***a dificuldade de encontrar um site confiável para consulta e comparação de preços de medicamentos***.
+Bem-vindo ao projeto BuscaFarma! Este repositório contém o código-fonte e a documentação para o desenvolvimento do nosso aplicativo inovador. O BuscaFarma tem como objetivo principal facilitar a comparação de preços e a localização de farmácias, resolvendo a principal dor do cliente: **_a dificuldade de encontrar um site confiável para consulta e comparação de preços de medicamentos_**.
 
 ## Esse Projeto
 
@@ -50,27 +50,50 @@ Contamos com uma equipe dedicada para manutenção e suporte, assegurando a qual
 
 Agradecemos por se juntar a nós nesta jornada para transformar a maneira como as pessoas encontram e comparam medicamentos. Juntos, podemos tornar o acesso à saúde mais fácil e acessível para todos.
 
+## Equipe
 
-### Modelo
-
-```mermaid
-erDiagram
-    USERS {
-        INT id PK "Primary Key"
-        STRING username "Username"
-        STRING password_hash "Password Hash"
-        STRING email "Email"
-        DATE created_at "Creation Date"
-        DATE updated_at "Last Updated"
-    }
-
-    %% Relationships can be added here if there are other entities related to Users
-    %% For example:
-    %% USER_ROLES {
-    %%     INT id PK "Primary Key"
-    %%     INT user_id FK "Foreign Key"
-    %%     STRING role "Role"
-    %% }
-    %% USERS ||--o{ USER_ROLES : has
-
-```
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <svg width="100" height="100">
+          <defs>
+            <clipPath id="circleView">
+              <circle cx="50" cy="50" r="50" fill="#FFFFFF" />
+            </clipPath>
+          </defs>
+          <image href="https://avatars.githubusercontent.com/u/50967217?v=4" width="100" height="100" clip-path="url(#circleView)" />
+        </svg>
+        <br>
+        <b><a href="https://github.com/neresfabio">Fábio Neres</a></b><br>
+        <i>FUllStack</i>
+      </td>
+      <td align="center">
+      <svg width="100" height="100">
+          <defs>
+            <clipPath id="circleView">
+              <circle cx="50" cy="50" r="50" fill="#FFFFFF" />
+            </clipPath>
+          </defs>
+          <image href="https://avatars.githubusercontent.com/u/108550945?v=4", width="100" height="100" clip-path="url(#circleView)" />
+        </svg>
+        <br>
+        <b><a href="https://github.com/thiagoferreirapy">Thiago Ferreira</a></b><br>
+        <i>BackEnd</i>
+      </tb>
+       <td align="center">
+      <svg width="100" height="100">
+          <defs>
+            <clipPath id="circleView">
+              <circle cx="50" cy="50" r="50" fill="#FFFFFF" />
+            </clipPath>
+          </defs>
+          <image href="https://avatars.githubusercontent.com/u/91827021?v=4" width="100" height="100" clip-path="url(#circleView)" />
+        </svg>
+        <br>
+        <b><a href="https://github.com/viotto-lucas">Viotto Lucas</a></b><br>
+        <i>FrontEnd</i>
+      </tb>
+    </tr>
+  </table>
+</div>
