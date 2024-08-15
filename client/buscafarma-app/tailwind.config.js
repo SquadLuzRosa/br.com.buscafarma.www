@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
+        oceanGreen400: "#4EB398",
         oceanGreen100: "#DCFAF0",
+        oceanGreen50:"#F3FAF8",
       }
     },
   },
