@@ -449,3 +449,39 @@ http://localhost:3000
 
 Agora você está pronto para começar a colaborar no projeto! Se tiver dúvidas, consulte a documentação ou entre em contato com o time.
 </details>
+
+<details>
+<summary>
+ Atualizar Branch Filha
+</summary>
+
+**Para atualizar uma branch filha com as mudanças da branch pai, você pode seguir um dos métodos abaixo**:
+
+### 1. **Usando `merge`**
+Este método é utilizado quando você quer incorporar as mudanças da branch pai (por exemplo, `develop`) na branch filha (por exemplo, `client`).
+
+```bash
+# Vá para a branch filha (client)
+git checkout client
+
+# Faça o merge da branch pai (develop) na branch filha (client)
+git merge develop
+```
+
+### 2. **Usando `rebase`**
+Este método reescreve o histórico da branch filha para parecer que ela foi criada a partir do commit mais recente da branch pai. Isso é útil para manter um histórico de commits mais linear.
+
+```bash
+# Vá para a branch filha (client)
+git checkout client
+
+# Faça o rebase da branch filha (client) com a branch pai (develop)
+git rebase develop
+```
+
+### Considerações
+- **`merge`** cria um commit de merge, o que pode ser útil para manter um histórico claro de quando as mudanças foram integradas.
+- **`rebase`** reescreve o histórico e é útil para manter um histórico mais limpo e linear, mas pode ser mais complexo de usar, especialmente se houver conflitos.
+
+Escolha o método que melhor se adapta ao fluxo de trabalho do seu projeto.
+</details>
