@@ -314,6 +314,178 @@ Esta documentação cobre o modelo de dados e as funcionalidades principais para
 </details>
 
 <details>
+<<<<<<< HEAD
+    <summary>Atualizando Branch</summary>
+    Para puxar as atualizações da branch pai para a sua branch atual, você pode usar um dos seguintes comandos, dependendo da estratégia de integração que você deseja adotar:
+
+### 1. **Merge (Padrão)**
+Essa opção criará um merge commit, combinando as mudanças da branch pai com a sua branch atual.
+```bash
+git merge nome-da-branch-pai
+```
+
+### 2. **Rebase**
+Essa opção aplicará as mudanças da branch pai no topo da sua branch atual, mantendo um histórico linear.
+```bash
+git rebase nome-da-branch-pai
+```
+
+### 3. **Fast-forward**
+Se você sabe que as mudanças na sua branch atual podem ser aplicadas diretamente após as mudanças da branch pai (sem a necessidade de um merge commit), use:
+```bash
+git merge --ff-only nome-da-branch-pai
+```
+
+### Passo a Passo
+1. **Certifique-se de estar na sua branch atual:**
+   ```bash
+   git checkout sua-branch
+   ```
+
+2. **Puxe as últimas atualizações da branch pai para garantir que você está sincronizado com o repositório remoto:**
+   ```bash
+   git fetch origin nome-da-branch-pai
+   ```
+
+3. **Realize a integração usando uma das estratégias acima:**
+   - Com `git merge`, `git rebase` ou `git merge --ff-only`, conforme explicado.
+
+### Exemplo
+Se sua branch atual é `feature` e a branch pai é `develop`, você faria o seguinte:
+```bash
+git checkout feature
+git fetch origin develop
+git merge develop   # ou git rebase develop
+```
+
+Isso integrará as últimas mudanças da branch `develop` na sua branch `feature`.
+</details>
+
+## Ferramentas
+
+<details>
+    <summary>Vite</summary>
+    
+A biblioteca **Vite** é uma ferramenta de construção de projetos moderna, focada em melhorar a experiência de desenvolvimento para aplicações web. Aqui estão alguns dos principais pontos sobre o Vite:
+
+### Principais Características
+
+1. **Desempenho Rápido**:
+   - Utiliza **ES modules** no navegador para otimizar o tempo de carregamento durante o desenvolvimento.
+   - O tempo de inicialização e recarregamento é significativamente reduzido, permitindo um fluxo de trabalho mais ágil.
+
+2. **Hot Module Replacement (HMR)**:
+   - O Vite oferece HMR extremamente rápido, permitindo que as alterações no código sejam refletidas no navegador em tempo real, sem perder o estado da aplicação.
+
+3. **Compatibilidade com Frameworks**:
+   - Suporta diversos frameworks populares como **Vue**, **React**, **Svelte**, entre outros, facilitando o desenvolvimento independente do framework escolhido.
+
+4. **Configuração Simples**:
+   - A configuração é simplificada e pode ser feita através de um arquivo `vite.config.js`, permitindo personalizações conforme a necessidade do projeto.
+
+5. **Build Otimizada**:
+   - Para produção, o Vite utiliza **Rollup** para otimização de builds, permitindo que você aproveite recursos avançados de empacotamento.
+
+6. **Plugin Ecosystem**:
+   - Possui um ecossistema de plugins, permitindo que os desenvolvedores estendam as funcionalidades do Vite para atender a necessidades específicas.
+
+# Documentação de Instalação do Projeto Vite
+
+Esta documentação é destinada a desenvolvedores que desejam contribuir com o projeto criado com Vite. Siga os passos abaixo para configurar o ambiente de desenvolvimento.
+
+## Pré-requisitos
+
+- **Node.js** (versão 12 ou superior)
+- **npm** (geralmente vem instalado com o Node.js)
+
+## Passo a Passo para Instalação
+
+### 1. Clonar o Repositório
+
+Use o comando abaixo para clonar o repositório do projeto:
+
+```bash
+git clone <URL_DO_REPOSITÓRIO>
+```
+
+### 2. Navegar para o Diretório do Projeto
+
+Entre no diretório do projeto clonado:
+
+```bash
+cd <NOME_DO_DIRETÓRIO>
+```
+
+### 3. Instalar Dependências
+
+Execute o comando para instalar as dependências do projeto:
+
+```bash
+npm install
+```
+
+### 4. Iniciar o Servidor de Desenvolvimento
+
+Para iniciar o servidor de desenvolvimento, utilize o seguinte comando:
+
+```bash
+npm run dev
+```
+
+### 5. Acessar a Aplicação
+
+Abra seu navegador e acesse:
+
+```
+http://localhost:3000
+```
+
+### 6. Contribuindo
+
+- Faça suas alterações no código.
+- Teste suas alterações localmente.
+- Para enviar suas contribuições, crie uma *branch* e abra um *pull request*.
+
+## Conclusão
+
+Agora você está pronto para começar a colaborar no projeto! Se tiver dúvidas, consulte a documentação ou entre em contato com o time.
+</details>
+
+<details>
+<summary>
+ Atualizar Branch Filha
+</summary>
+
+**Para atualizar uma branch filha com as mudanças da branch pai, você pode seguir um dos métodos abaixo**:
+
+### 1. **Usando `merge`**
+Este método é utilizado quando você quer incorporar as mudanças da branch pai (por exemplo, `develop`) na branch filha (por exemplo, `client`).
+
+```bash
+# Vá para a branch filha (client)
+git checkout client
+
+# Faça o merge da branch pai (develop) na branch filha (client)
+git merge develop
+```
+
+### 2. **Usando `rebase`**
+Este método reescreve o histórico da branch filha para parecer que ela foi criada a partir do commit mais recente da branch pai. Isso é útil para manter um histórico de commits mais linear.
+
+```bash
+# Vá para a branch filha (client)
+git checkout client
+
+# Faça o rebase da branch filha (client) com a branch pai (develop)
+git rebase develop
+```
+
+### Considerações
+- **`merge`** cria um commit de merge, o que pode ser útil para manter um histórico claro de quando as mudanças foram integradas.
+- **`rebase`** reescreve o histórico e é útil para manter um histórico mais limpo e linear, mas pode ser mais complexo de usar, especialmente se houver conflitos.
+
+Escolha o método que melhor se adapta ao fluxo de trabalho do seu projeto.
+=======
  <summary>
     Team QAs
  </summary>
@@ -350,4 +522,5 @@ graph TD;
 
 
 
+>>>>>>> develop
 </details>
