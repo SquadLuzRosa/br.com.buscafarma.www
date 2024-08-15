@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Bem-vindo ao projeto BuscaFarma! Este repositório contém o código-fonte e a documentação para o desenvolvimento do nosso aplicativo inovador. O BuscaFarma tem como objetivo principal facilitar a comparação de preços e a localização de farmácias, resolvendo a principal dor do cliente: ***a dificuldade de encontrar um site confiável para consulta e comparação de preços de medicamentos***.
+Bem-vindo ao projeto BuscaFarma! Este repositório contém o código-fonte e a documentação para o desenvolvimento do nosso aplicativo inovador. O BuscaFarma tem como objetivo principal facilitar a comparação de preços e a localização de farmácias, resolvendo a principal dor do cliente: **_a dificuldade de encontrar um site confiável para consulta e comparação de preços de medicamentos_**.
 
 ## Esse Projeto
 
@@ -50,27 +50,58 @@ Contamos com uma equipe dedicada para manutenção e suporte, assegurando a qual
 
 Agradecemos por se juntar a nós nesta jornada para transformar a maneira como as pessoas encontram e comparam medicamentos. Juntos, podemos tornar o acesso à saúde mais fácil e acessível para todos.
 
+## Tecnologias Utilizadas
 
-### Modelo
+Durante o desenvolvimento deste projeto, foram empregadas as seguintes tecnologias:
 
-```mermaid
-erDiagram
-    USERS {
-        INT id PK "Primary Key"
-        STRING username "Username"
-        STRING password_hash "Password Hash"
-        STRING email "Email"
-        DATE created_at "Creation Date"
-        DATE updated_at "Last Updated"
-    }
+- **Linguagem de Programação:** 
+  - [Pyton](https://www.python.org/)
+  - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- **Frameworks e Bibliotecas:**
+  - [Vite](https://vitejs.dev/)
+  - [Django](https://www.djangoproject.com/)
+  - [Link]()
+  - [Link]()
+- **Banco de Dados:** [PostgreSQL](https://www.postgresql.org/)
+- **Controle de Versão:** [Git](https://git-scm.com/)
+  - Repositório hospedado no [GitHub](https://github.com/)
+- **Ferramentas de Gestão e Colaboração:**
+  - [Jira](https://www.atlassian.com/software/jira)
+  - [Confluence](https://www.atlassian.com/software/confluence)
+- **Plataforma de Deploy:**
+  - [Docker](https://www.docker.com/)
 
-    %% Relationships can be added here if there are other entities related to Users
-    %% For example:
-    %% USER_ROLES {
-    %%     INT id PK "Primary Key"
-    %%     INT user_id FK "Foreign Key"
-    %%     STRING role "Role"
-    %% }
-    %% USERS ||--o{ USER_ROLES : has
+Essa combinação de tecnologias foi escolhida para garantir eficiência, escalabilidade e facilidade de manutenção do projeto.
 
-```
+
+## Equipe
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/50967217?v=4" width="100" ><br>
+        <a href="https://github.com/neresfabio" ><b>Fábio Neres</b></a><br>
+        <i>FullStack</i>
+      </td>
+      <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/108550945?v=4" width="100" ><br>
+        <a href="https://github.com/thiagoferreirapy" ><b>Thiago Ferreira</b></a><br>
+        <i>BackEnd</i>
+      </td>
+      <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/91827021?v=4" width="100" ><br>
+        <a href="https://github.com/viotto-lucas" ><b>Lucas Viotto</b></a><br>
+        <i>FrontEnd</i>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/56051094?v=4" width="100" ><br>
+        <a href="https://github.com/TiagoMata" ><b>Tiago Mata</b></a><br>
+        <i>QA</i>
+      </td>
+    </tr>
+  </table>
+</div>
+
