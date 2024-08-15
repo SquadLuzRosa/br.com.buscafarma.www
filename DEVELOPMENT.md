@@ -661,6 +661,4 @@ graph TD;
     F --> B;
 ```
 Esta documentação cobre o modelo de dados e as funcionalidades principais para o sistema de inclusão e consulta de preços de medicamentos. Inclui agora a estrutura necessária para a gestão de tokens de autenticação.
-
-
 </details>
