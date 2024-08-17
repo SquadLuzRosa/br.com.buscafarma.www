@@ -3,9 +3,7 @@
 - **Propósito**: Orientar novos colaboradores sobre como contribuir para o projeto, incluindo o processo de configuração do ambiente de desenvolvimento, padrões de código, como enviar pull requests, etc.
 - **Conteúdo**: Regras de contribuição, configuração do ambiente, processos de build e deploy, etc.
 
-Dado que seu projeto já possui a estrutura com as pastas `client` e `service`, além dos arquivos `README.md` e `DEVELOPMENT.md` na raiz, você pode adicionar uma pasta dedicada à documentação na raiz do projeto para centralizar as informações relacionadas à infraestrutura e outras documentações técnicas.
-
-### Estrutura Sugerida
+### Estrutura
 ```plaintext
 /
 ├── client/            # Código-fonte do frontend (Vite)
@@ -36,8 +34,6 @@ Dado que seu projeto já possui a estrutura com as pastas `client` e `service`, 
 2. **Mover ou criar a documentação específica** para dentro da pasta `docs/`.
 
 3. **Atualizar o `README.md`** na raiz para incluir links para a nova documentação dentro de `docs/`.
-
-Com essa estrutura, você mantém o projeto organizado, garantindo que as documentações sejam facilmente acessíveis e bem categorizadas.
 
 ### FLUXO `git flow`
 
