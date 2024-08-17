@@ -25,16 +25,6 @@
 - **`API_DOCS.md` (opcional)**: Documentação da API, caso aplicável.
 - **`DEPLOYMENT.md` (opcional)**: Instruções detalhadas para o processo de deploy manual.
 
-### Passos para Implementar
-1. **Criar a pasta `docs/`** na raiz do projeto:
-   ```bash
-   mkdir docs
-   ```
-
-2. **Mover ou criar a documentação específica** para dentro da pasta `docs/`.
-
-3. **Atualizar o `README.md`** na raiz para incluir links para a nova documentação dentro de `docs/`.
-
 ### FLUXO `git flow`
 
 ```mermaid
