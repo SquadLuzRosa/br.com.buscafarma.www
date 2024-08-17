@@ -32,6 +32,7 @@ graph TD;
     A[Main] --> B[Developer]
     B --> C[Client]
     B --> D[Service]
+    B --> E[Devops]
 ```
 
 <details>
