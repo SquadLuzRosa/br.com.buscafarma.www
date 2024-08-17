@@ -34,6 +34,41 @@ graph TD;
     B --> D[Service]
     B --> E[Devops]
 ```
+<details>
+ <summary>
+    Team QAs
+ </summary>
+
+> Esse README ajuda a estruturar o processo de homologação e garantir que todos os envolvidos no projeto estejam alinhados com os procedimentos de qualidade.
+
+## Homologação e Testes de Qualidade
+
+### Fluxo de Homologação
+
+Os desenvolvedores devem seguir o seguinte fluxo para garantir que o código seja devidamente testado antes de ser integrado à branch principal:
+
+1. **Desenvolvimento**: Cada desenvolvedor trabalha em uma branch separada (ex: `client`, `service`).
+2. **Atualização da Branch `develop`**: Após concluir a tarefa, o desenvolvedor faz um merge da sua branch (`client` ou `service`) na branch `develop`.
+3. **Homologação**: A branch `develop` é usada exclusivamente para testes de QA. Ela deve estar sempre atualizada com as últimas mudanças para que os QAs possam realizar seus testes.
+4. **Testes de QA**: Os QAs acessam o ambiente de homologação onde a branch `develop` está rodando para realizar os testes.
+5. **Correções e Ajustes**: Caso sejam identificados bugs ou problemas, as correções são feitas nas branches correspondentes (`client`, `service`) e, após validadas, são novamente integradas à branch `develop`.
+
+```mermaid
+%% Diagrama de fluxo de homologação
+
+graph TD;
+    subgraph Desenvolvimento
+        A[Branch Client] --> B[Branch Develop];
+        C[Branch Service] --> B[Branch Develop];
+    end
+
+    B --> D[Ambiente de Homologação];
+    D --> E[Testes de QA];
+    E --> |Bugs Encontrados| F[Correções nas Branches Individuais];
+    F --> B;
+```
+Esta documentação cobre o modelo de dados e as funcionalidades principais para o sistema de inclusão e consulta de preços de medicamentos. Inclui agora a estrutura necessária para a gestão de tokens de autenticação.
+</details>
 
 <details>
 <summary>Comandos `git`*</summary>
@@ -650,38 +685,4 @@ Agora você está pronto para começar a colaborar no projeto! Se tiver dúvidas
 
 </details>
 
-<details>
- <summary>
-    Team QAs
- </summary>
 
-> Esse README ajuda a estruturar o processo de homologação e garantir que todos os envolvidos no projeto estejam alinhados com os procedimentos de qualidade.
-
-## Homologação e Testes de Qualidade
-
-### Fluxo de Homologação
-
-Os desenvolvedores devem seguir o seguinte fluxo para garantir que o código seja devidamente testado antes de ser integrado à branch principal:
-
-1. **Desenvolvimento**: Cada desenvolvedor trabalha em uma branch separada (ex: `client`, `service`).
-2. **Atualização da Branch `develop`**: Após concluir a tarefa, o desenvolvedor faz um merge da sua branch (`client` ou `service`) na branch `develop`.
-3. **Homologação**: A branch `develop` é usada exclusivamente para testes de QA. Ela deve estar sempre atualizada com as últimas mudanças para que os QAs possam realizar seus testes.
-4. **Testes de QA**: Os QAs acessam o ambiente de homologação onde a branch `develop` está rodando para realizar os testes.
-5. **Correções e Ajustes**: Caso sejam identificados bugs ou problemas, as correções são feitas nas branches correspondentes (`client`, `service`) e, após validadas, são novamente integradas à branch `develop`.
-
-```mermaid
-%% Diagrama de fluxo de homologação
-
-graph TD;
-    subgraph Desenvolvimento
-        A[Branch Client] --> B[Branch Develop];
-        C[Branch Service] --> B[Branch Develop];
-    end
-
-    B --> D[Ambiente de Homologação];
-    D --> E[Testes de QA];
-    E --> |Bugs Encontrados| F[Correções nas Branches Individuais];
-    F --> B;
-```
-Esta documentação cobre o modelo de dados e as funcionalidades principais para o sistema de inclusão e consulta de preços de medicamentos. Inclui agora a estrutura necessária para a gestão de tokens de autenticação.
-</details>
