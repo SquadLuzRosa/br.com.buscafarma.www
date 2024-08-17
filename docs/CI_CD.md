@@ -1,0 +1,1 @@
+# Documentação de pipelines CI/CD (opcional)

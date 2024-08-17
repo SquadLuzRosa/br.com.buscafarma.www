@@ -662,3 +662,38 @@ graph TD;
 ```
 Esta documentação cobre o modelo de dados e as funcionalidades principais para o sistema de inclusão e consulta de preços de medicamentos. Inclui agora a estrutura necessária para a gestão de tokens de autenticação.
 </details>
+Dado que seu projeto já possui a estrutura com as pastas `client` e `service`, além dos arquivos `README.md` e `DEVELOPMENT.md` na raiz, você pode adicionar uma pasta dedicada à documentação na raiz do projeto para centralizar as informações relacionadas à infraestrutura e outras documentações técnicas.
+
+### Estrutura Sugerida
+```plaintext
+/
+├── client/            # Código-fonte do frontend (Vite)
+├── service/           # Código-fonte do backend (Django)
+├── docs/              # Pasta dedicada à documentação
+│   ├── INFRASTRUCTURE.md  # Documentação de infraestrutura
+│   ├── CI_CD.md       # Documentação de pipelines CI/CD (opcional)
+│   ├── API_DOCS.md    # Documentação da API (opcional)
+│   └── DEPLOYMENT.md  # Documentação de processos de deploy (opcional)
+├── README.md          # Documentação geral do projeto
+├── DEVELOPMENT.md     # Diretrizes de desenvolvimento
+└── .gitignore         # Arquivos ignorados pelo Git
+```
+
+### Detalhes
+- **`docs/`**: Essa pasta conterá toda a documentação técnica específica, incluindo infraestrutura, CI/CD, API, e processos de deploy.
+- **`INFRASTRUCTURE.md`**: Documento detalhando a configuração de infraestrutura, como uso de Docker, Docker Compose, serviços de hospedagem como Render, etc.
+- **`CI_CD.md` (opcional)**: Documentação de pipelines de integração e deploy contínuo.
+- **`API_DOCS.md` (opcional)**: Documentação da API, caso aplicável.
+- **`DEPLOYMENT.md` (opcional)**: Instruções detalhadas para o processo de deploy manual.
+
+### Passos para Implementar
+1. **Criar a pasta `docs/`** na raiz do projeto:
+   ```bash
+   mkdir docs
+   ```
+
+2. **Mover ou criar a documentação específica** para dentro da pasta `docs/`.
+
+3. **Atualizar o `README.md`** na raiz para incluir links para a nova documentação dentro de `docs/`.
+
+Com essa estrutura, você mantém o projeto organizado, garantindo que as documentações sejam facilmente acessíveis e bem categorizadas.
