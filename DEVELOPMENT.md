@@ -685,4 +685,60 @@ Agora você está pronto para começar a colaborar no projeto! Se tiver dúvidas
 
 </details>
 
+<details>
+    <summary> Django </summary>
 
+**Django** é um framework web de alto nível para Python que promove o desenvolvimento rápido e o design limpo e pragmático. Ele é conhecido por sua simplicidade, robustez e a capacidade de escalonar para grandes aplicações. Django vem com várias funcionalidades prontas para uso, como sistema de autenticação, administração, formulários, validação de dados e muito mais.
+
+#### Principais Pontos do Django:
+- **MVT (Model-View-Template)**: Segue o padrão arquitetônico MVT, onde o Model gerencia os dados da aplicação, o View processa as solicitações e retorna respostas, e o Template é responsável pela apresentação.
+- **ORM (Object-Relational Mapping)**: Django possui um ORM poderoso, permitindo que você interaja com bancos de dados usando objetos Python em vez de escrever SQL diretamente.
+- **Admin Interface**: O Django gera automaticamente uma interface administrativa completa baseada nos modelos definidos, facilitando a gestão de conteúdo.
+- **Segurança**: Oferece várias proteções contra ameaças comuns na web, como CSRF, XSS, SQL Injection, e Clickjacking.
+- **Escalabilidade**: Pode ser facilmente escalado horizontalmente, sendo utilizado em grandes sites como Instagram e Pinterest.
+
+#### Como Inicializar o Django Após Clonar o Projeto
+
+Após clonar o projeto, siga os passos abaixo para configurar e iniciar o Django:
+
+1. **Clone o repositório**:
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd <NOME_DO_PROJETO>
+   ```
+
+2. **Configurar o ambiente virtual**:
+   - Crie e ative um ambiente virtual (opcional, mas recomendado):
+     ```bash
+     python -m venv venv
+     source venv/bin/activate  # Linux/macOS
+     venv\Scripts\activate  # Windows
+     ```
+
+3. **Instalar as dependências**:
+   - Instale as dependências do projeto listadas no arquivo `requirements.txt`:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+4. **Configurar o banco de dados**:
+   - Aplique as migrações do banco de dados para criar as tabelas necessárias:
+     ```bash
+     python manage.py migrate
+     ```
+
+5. **Criar um superusuário**:
+   - Crie um superusuário para acessar a interface administrativa:
+     ```bash
+     python manage.py createsuperuser
+     ```
+
+6. **Inicializar o servidor de desenvolvimento**:
+   - Inicie o servidor de desenvolvimento do Django:
+     ```bash
+     python manage.py runserver
+     ```
+   - Acesse o servidor em `http://127.0.0.1:8000/`.
+
+Seguindo esses passos, você terá o ambiente de desenvolvimento do Django configurado e pronto para uso.
+</details>
