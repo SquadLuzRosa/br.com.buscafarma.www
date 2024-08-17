@@ -742,3 +742,61 @@ Após clonar o projeto, siga os passos abaixo para configurar e iniciar o Django
 
 Seguindo esses passos, você terá o ambiente de desenvolvimento do Django configurado e pronto para uso.
 </details>
+
+<details>
+    <summary>Docker</summary>
+
+Se você preferir rodar o projeto Django usando Docker, siga os passos abaixo após clonar o repositório.
+
+#### 1. **Clone o Repositório**
+   - Primeiro, clone o repositório do projeto:
+     ```bash
+     git clone <URL_DO_REPOSITORIO>
+     cd <NOME_DO_PROJETO>
+     ```
+
+#### 2. **Configuração do Arquivo `.env` (Opcional)**
+   - Se o projeto usa variáveis de ambiente, crie um arquivo `.env` na raiz do projeto com as configurações necessárias (como credenciais de banco de dados).
+
+#### 3. **Inicializar o Docker Compose**
+   - O projeto já deve conter um arquivo `docker-compose.yml`, que define os serviços necessários para rodar o projeto (Django, PostgreSQL, etc.).
+   - Para iniciar todos os serviços, execute:
+     ```bash
+     docker-compose up --build
+     ```
+   - Este comando irá:
+     - **Construir** as imagens Docker para o backend Django e o frontend.
+     - **Iniciar** o banco de dados PostgreSQL.
+     - **Executar** o servidor de desenvolvimento do Django.
+
+#### 4. **Acessar o Projeto**
+   - Com todos os serviços em execução, você pode acessar o servidor Django em `http://localhost:8000/`.
+   - Para acessar a interface administrativa, use o mesmo endereço e faça login com o superusuário que foi configurado.
+
+#### 5. **Gerenciar o Projeto com Docker**
+   - **Executar Comandos no Container Django**:
+     - Se precisar executar comandos Django, como migrações ou criar um superusuário, você pode fazê-lo diretamente no container:
+       ```bash
+       docker-compose exec django python manage.py migrate
+       docker-compose exec django python manage.py createsuperuser
+       ```
+   - **Parar os Serviços**:
+     - Para parar e remover os containers, redes e volumes, use:
+       ```bash
+       docker-compose down
+       ```
+
+#### 6. **Ambiente de QA**
+   - Se você tem um arquivo `docker-compose.qa.yml` para o ambiente de QA, utilize-o da seguinte forma:
+     ```bash
+     docker-compose -f docker-compose.qa.yml up --build
+     ```
+
+### Resumo da Estrutura Docker
+- **`docker-compose.yml`**: Orquestra os serviços para desenvolvimento e produção.
+- **`docker-compose.qa.yml`**: Configurações específicas para o ambiente de QA.
+- **Containers**: Docker cria containers isolados para o backend (Django), frontend (Vite), e banco de dados (PostgreSQL).
+- **Volumes**: Persistem os dados do banco de dados e o código-fonte para facilitar o desenvolvimento.
+
+Com essas configurações, você pode rodar o projeto em um ambiente Dockerizado de forma rápida e eficiente, permitindo maior flexibilidade e consistência no desenvolvimento e nos testes.
+</details>
