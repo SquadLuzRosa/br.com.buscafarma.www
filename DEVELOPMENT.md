@@ -203,6 +203,153 @@ Este guia fornece uma visão geral dos comandos mais utilizados para trabalhar c
 </details>
 
 <details>
+<summary>Comandos Docker</summary>
+Aqui está uma lista dos principais comandos Docker, com uma breve descrição de cada um:
+
+### 1. **`docker build`**
+   - **Descrição:** Constrói uma imagem a partir de um Dockerfile.
+   - **Exemplo:**
+     ```bash
+     docker build -t nome-da-imagem .
+     ```
+
+### 2. **`docker run`**
+   - **Descrição:** Cria e executa um novo contêiner a partir de uma imagem.
+   - **Exemplo:**
+     ```bash
+     docker run -d -p 8080:80 nome-da-imagem
+     ```
+
+### 3. **`docker ps`**
+   - **Descrição:** Lista os contêineres em execução.
+   - **Exemplo:**
+     ```bash
+     docker ps
+     ```
+
+### 4. **`docker ps -a`**
+   - **Descrição:** Lista todos os contêineres, incluindo os que não estão em execução.
+   - **Exemplo:**
+     ```bash
+     docker ps -a
+     ```
+
+### 5. **`docker images`**
+   - **Descrição:** Lista todas as imagens Docker armazenadas localmente.
+   - **Exemplo:**
+     ```bash
+     docker images
+     ```
+
+### 6. **`docker stop`**
+   - **Descrição:** Para um ou mais contêineres em execução.
+   - **Exemplo:**
+     ```bash
+     docker stop nome-do-container
+     ```
+
+### 7. **`docker start`**
+   - **Descrição:** Inicia um ou mais contêineres parados.
+   - **Exemplo:**
+     ```bash
+     docker start nome-do-container
+     ```
+
+### 8. **`docker rm`**
+   - **Descrição:** Remove um ou mais contêineres.
+   - **Exemplo:**
+     ```bash
+     docker rm nome-do-container
+     ```
+
+### 9. **`docker rmi`**
+   - **Descrição:** Remove uma ou mais imagens.
+   - **Exemplo:**
+     ```bash
+     docker rmi nome-da-imagem
+     ```
+
+### 10. **`docker exec`**
+   - **Descrição:** Executa um comando em um contêiner em execução.
+   - **Exemplo:**
+     ```bash
+     docker exec -it nome-do-container /bin/bash
+     ```
+
+### 11. **`docker logs`**
+   - **Descrição:** Exibe os logs de um contêiner em execução.
+   - **Exemplo:**
+     ```bash
+     docker logs nome-do-container
+     ```
+
+### 12. **`docker-compose up`**
+   - **Descrição:** Inicia os serviços definidos em um arquivo `docker-compose.yml`.
+   - **Exemplo:**
+     ```bash
+     docker-compose up -d
+     ```
+
+### 13. **`docker-compose down`**
+   - **Descrição:** Para e remove contêineres, redes e volumes criados pelo `docker-compose up`.
+   - **Exemplo:**
+     ```bash
+     docker-compose down
+     ```
+
+### 14. **`docker pull`**
+   - **Descrição:** Baixa uma imagem do Docker Hub.
+   - **Exemplo:**
+     ```bash
+     docker pull nome-da-imagem
+     ```
+
+### 15. **`docker push`**
+   - **Descrição:** Envia uma imagem para o Docker Hub.
+   - **Exemplo:**
+     ```bash
+     docker push nome-da-imagem
+     ```
+
+### 16. **`docker network ls`**
+   - **Descrição:** Lista as redes do Docker.
+   - **Exemplo:**
+     ```bash
+     docker network ls
+     ```
+
+### 17. **`docker volume ls`**
+   - **Descrição:** Lista os volumes do Docker.
+   - **Exemplo:**
+     ```bash
+     docker volume ls
+     ```
+
+### 18. **`docker inspect`**
+   - **Descrição:** Exibe detalhes sobre um contêiner ou uma imagem.
+   - **Exemplo:**
+     ```bash
+     docker inspect nome-do-container
+     ```
+
+### 19. **`docker-compose build`**
+   - **Descrição:** Constrói as imagens definidas no `docker-compose.yml`.
+   - **Exemplo:**
+     ```bash
+     docker-compose build
+     ```
+
+### 20. **`docker system prune`**
+   - **Descrição:** Remove contêineres parados, redes não utilizadas, imagens não referenciadas e caches de construção.
+   - **Exemplo:**
+     ```bash
+     docker system prune -a
+     ```
+
+Esses comandos são fundamentais para gerenciar contêineres, imagens e serviços Docker no dia a dia.
+</details>
+
+<details>
 
 <summary>
     Regras de versionamento
