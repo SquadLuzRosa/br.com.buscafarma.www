@@ -10,10 +10,6 @@ Esse projeto faz parte de uma iniciativa voluntária criada pelo **[Pipoca Ágil
 
 ## Proposta MVP - BuscaFarma
 
-### Aplicativo para Compartilhar Preços e Localização de Medicamentos
-
-O BuscaFarma permitirá que os usuários compartilhem os preços de medicamentos e a localização das farmácias onde encontraram os produtos, utilizando um mapa interativo.
-
 ### Busca por Farmácias com Atendimento pelo SUS e Localização
 
 O aplicativo exibirá farmácias que oferecem atendimento pelo SUS, incluindo farmácias 24 horas, com geolocalização precisa.
